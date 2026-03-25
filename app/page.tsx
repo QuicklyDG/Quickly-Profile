@@ -396,7 +396,7 @@ export default function Home() {
 
       {/* ── FOOTER ───────────────────────────────────────────────────── */}
       <footer className="py-8 px-6 border-t border-zinc-800 text-center text-zinc-500 text-sm">
-        <p>© {new Date().getFullYear()} Alex Dev. Built with Next.js &amp; Tailwind CSS.</p>
+        <p>© {new Date().getFullYear()} Quickly De Guzman. Built with Next.js &amp; Tailwind CSS.</p>
       </footer>
     </div>
   );
