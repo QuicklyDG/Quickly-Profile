@@ -214,7 +214,7 @@ export default function Home() {
 
           <h1 className="animate-fade-in-up delay-200 opacity-0-init text-5xl sm:text-7xl font-extrabold tracking-tight leading-tight mb-6">
             Hi, I&apos;m{" "}
-            <span className="gradient-text">Quickly</span>
+            <span className="gradient-text">Quickly De Guzman</span>
             <br />
             Full-Stack Developer
           </h1>
