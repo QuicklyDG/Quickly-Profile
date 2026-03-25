@@ -1,49 +1,70 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import Particles from "./_components/particles";
+import dynamic from "next/dynamic";
+
+const Particles = dynamic(() => import("./_components/particles"), { ssr: false });
 
 const skills = [
   { name: "React / Next.js", icon: "⚛️", level: 95 },
-  { name: "Tailwind CSS",     icon: "🎨", level: 92 },
-  { name: "Laravel",              icon: "🌿", level: 72 },
+  { name: "Laravel",        icon: "🌿", level: 80 },
+  { name: "Tailwind CSS",   icon: "🎨", level: 92 },
+  { name: "PHP",            icon: "🐘", level: 75 },
+  { name: "MySQL",          icon: "🛢️", level: 90 },
+];
+
+const itSkills = [
+  { name: "Hardware & Software Troubleshooting", icon: "🛠️", level: 90 },
+  { name: "Windows Server",         icon: "🖥️", level: 85 },
+  { name: "Active Directory",       icon: "📁", level: 82 },
+  { name: "AWS / Azure",            icon: "☁️", level: 78 },
+  { name: "VMware / Hyper-V",       icon: "💡", level: 72 },
 ];
 
 const projects = [
   {
-    title: "StreamFlow",
+    title: "EmpireOne HRIS (Human Resource Information System)",
     description:
       "Real-time collaborative workspace with live cursors, shared whiteboards, and video conferencing built on WebSockets and WebRTC.",
-    tags: ["Next.js", "WebSockets", "WebRTC", "Redis"],
+    tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-violet-600 to-indigo-600",
-    link: "#",
-    demo: "#",
+    link: "https://empireone-hris.com/",
+    demo: "https://empireone-hris.com/",
   },
   {
-    title: "CartIQ",
+    title: "EmpireOne Ticketing System",
     description:
       "AI-powered e-commerce platform with personalised recommendations, dynamic pricing engine, and sub-100 ms checkout.",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-pink-600 to-rose-600",
-    link: "#",
-    demo: "#",
+    link: "https://eo-unified-ims.com/",
+    demo: "https://eo-unified-ims.com/",
   },
   {
-    title: "PulseMetrics",
+    title: "EmpireOne Unified System",
     description:
       "Full-stack analytics dashboard ingesting millions of events per day with live charts, custom funnels, and export pipelines.",
-    tags: ["TypeScript", "ClickHouse", "D3.js", "AWS"],
+    tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-orange-500 to-amber-500",
-    link: "#",
-    demo: "#",
+    link: "https://empireone-bpo.com/",
+    demo: "https://empireone-bpo.com/",
   },
   {
-    title: "DevDock",
+    title: "Curtis CRMS (Customer Relationship Management System)",
     description:
       "CLI + web UI for spinning up reproducible dev environments via Docker Compose profiles, with one-command setup.",
-    tags: ["Docker", "Go", "React", "SQLite"],
+    tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-teal-500 to-cyan-600",
-    link: "#",
-    demo: "#",
+    link: "https://curtis-css.com/",
+    demo: "https://curtis-css.com/",
+  },
+  {
+    title: "Egies Beauty Botique POS (Point of Sale)",
+    description:
+      "CLI + web UI for spinning up reproducible dev environments via Docker Compose profiles, with one-command setup.",
+    tags: ["React.js", "Laravel", "MySQL"],
+    gradient: "from-pink-600 to-rose-600",
+    link: "https://egies-pos.site/",
+    demo: "https://egies-pos.site/",
   },
 ];
 
@@ -103,12 +124,12 @@ function ProjectCard({ project, delay }: { project: typeof projects[0]; delay: n
           ))}
         </div>
         <div className="flex gap-3 pt-1">
-          <a href={project.link} className="text-sm text-indigo-400 hover:text-indigo-300 transition-colors font-medium flex items-center gap-1">
-            GitHub →
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-400 hover:text-indigo-300 transition-colors font-medium flex items-center gap-1">
+            Visit →
           </a>
-          <a href={project.demo} className="text-sm text-pink-400 hover:text-pink-300 transition-colors font-medium flex items-center gap-1">
+          {/* <a href={project.demo} className="text-sm text-pink-400 hover:text-pink-300 transition-colors font-medium flex items-center gap-1">
             Live Demo →
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
@@ -271,7 +292,7 @@ export default function Home() {
             <div className="relative w-64 h-64 sm:w-80 sm:h-80">
               <div className="absolute inset-0 rounded-3xl gradient-bg opacity-20 blur-xl" />
               <div className="relative w-full h-full rounded-3xl glass flex items-center justify-center text-8xl border border-zinc-700">
-                👨‍💻
+                <img src="/profile.png" alt="" className="w-full h-full object-cover rounded-3xl" />
               </div>
             </div>
           </div>
@@ -281,17 +302,17 @@ export default function Home() {
               About <span className="gradient-text">Me</span>
             </h2>
             <p className="text-zinc-400 leading-relaxed">
-              I&apos;m a passionate full-stack developer with 5+ years of experience turning ideas into polished digital experiences. I thrive in the intersection of great design and pragmatic engineering.
+              I&apos;m a passionate full-stack developer with 2+ years of experience turning ideas into polished digital experiences. I thrive in the intersection of great design and pragmatic engineering.
             </p>
             <p className="text-zinc-400 leading-relaxed">
               When I&apos;m not coding, you&apos;ll find me contributing to open-source, writing technical articles, or exploring new frameworks. I care deeply about performance, accessibility, and developer experience.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-2">
               {[
-                { value: "50+", label: "Projects Shipped" },
-                { value: "5+",  label: "Years Experience" },
-                { value: "20+", label: "Happy Clients" },
-                { value: "12K", label: "GitHub Stars" },
+                // { value: "5+", label: "Projects" },
+                // { value: "2+",  label: "Years Experience" },
+                // { value: "20+", label: "Happy Clients" },
+                // { value: "12K", label: "GitHub Stars" },
               ].map(({ value, label }) => (
                 <div key={label} className="glass rounded-xl p-4 text-center border border-zinc-800">
                   <div className="text-2xl font-bold gradient-text">{value}</div>
@@ -311,8 +332,21 @@ export default function Home() {
             </h2>
             <p className="text-zinc-400">Technologies I work with on a daily basis</p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-8">
+
+          <h3 className="text-lg font-semibold text-zinc-300 mb-6 flex items-center gap-2">
+            <span className="gradient-text">⚙️</span> Development
+          </h3>
+          <div className="grid sm:grid-cols-2 gap-8 mb-14">
             {skills.map((s, i) => (
+              <SkillBar key={s.name} {...s} delay={i * 80} />
+            ))}
+          </div>
+
+          <h3 className="text-lg font-semibold text-zinc-300 mb-6 flex items-center gap-2">
+            <span className="gradient-text">🖧</span> IT &amp; Infrastructure
+          </h3>
+          <div className="grid sm:grid-cols-2 gap-8">
+            {itSkills.map((s, i) => (
               <SkillBar key={s.name} {...s} delay={i * 80} />
             ))}
           </div>
@@ -396,7 +430,7 @@ export default function Home() {
 
       {/* ── FOOTER ───────────────────────────────────────────────────── */}
       <footer className="py-8 px-6 border-t border-zinc-800 text-center text-zinc-500 text-sm">
-        <p>© {new Date().getFullYear()} Quickly De Guzman. Built with Next.js &amp; Tailwind CSS.</p>
+        <p>© {new Date().getFullYear()} Built and Designed by Quickly De Guzman.</p>
       </footer>
     </div>
   );
