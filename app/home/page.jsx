@@ -1,11 +1,12 @@
-"use client";
-
 import Link from "next/link";
+
+export const metadata = {
+  title: "Home Page",
+};
 
 export default function Page() {
   return (
     <div>
-      <title>Home Page</title>
       <Link href="/about">Go to About</Link>
     </div>
   );
