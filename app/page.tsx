@@ -290,9 +290,9 @@ export default function Home() {
           {/* Avatar placeholder */}
           <div className="flex justify-center animate-float">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80">
-              <div className="absolute inset-0 rounded-3xl gradient-bg opacity-20 blur-xl" />
-              <div className="relative w-full h-full rounded-3xl glass flex items-center justify-center text-8xl border border-zinc-700">
-                <img src="/profile.png" alt="" className="w-full h-full object-cover rounded-3xl" />
+              <div className="absolute inset-0 rounded-3xl gradient-bg opacity-2 blur-xl" />
+              <div className="relative w-full h-full rounded-3xl glass flex items-center justify-center text-8xl border border-white">
+                <img src="/profile1.png" alt="" className="w-full h-full object-cover rounded-3xl" />
               </div>
             </div>
           </div>
@@ -301,12 +301,18 @@ export default function Home() {
             <h2 className="text-4xl font-bold">
               About <span className="gradient-text">Me</span>
             </h2>
-            <p className="text-zinc-400 leading-relaxed">
+            {/* <p className="text-zinc-400 leading-relaxed">
               I&apos;m a passionate full-stack developer with 2+ years of experience turning ideas into polished digital experiences. I thrive in the intersection of great design and pragmatic engineering.
+            </p> */}
+                            <p className="text-zinc-400 leading-relaxed">
+      A highly skilled and results-driven IT Staff and Full-Stack Developer designing, developing, and maintaining web applications and IT infrastructure. Proven expertise in front-end and back-end development, system administration, and troubleshooting. Adept at writing clean, scalable code in multiple programming languages such as HTML, CSS and JavaScript, . Strong understanding of databases (MySQL), version control (Git), and web frameworks (Laravel, React, Node.js). Excellent problem-solving skills, capable of identifying and resolving complex technical issues while ensuring optimal performance, security, and user experience. 
+              </p>
+                   <p className="text-zinc-400 leading-relaxed">
+          Proficient in working with cross-functional teams to deliver seamless technology solutions, while maintaining high-quality standards in every project. Committed to staying up-to-date with industry trends and best practices in web development and IT operations. A highly skilled and results-driven IT Staff and Web Developer designing, developing, and maintaining web applications and IT infrastructure. Proven expertise in front-end and back-end development, system administration, and troubleshooting. Adept at writing clean, scalable code in multiple programming languages such as HTML, CSS and JavaScript, . Strong understanding of databases (MySQL), version control (Git), and web frameworks (Laravel, React, Node.js). Excellent problem-solving skills, capable of identifying and resolving complex technical issues while ensuring optimal performance, security, and user experience. Proficient in working with cross-functional teams to deliver seamless technology solutions, while maintaining high-quality standards in every project. Committed to staying up-to-date with industry trends and best practices in web development and IT operations.
             </p>
-            <p className="text-zinc-400 leading-relaxed">
+            {/* <p className="text-zinc-400 leading-relaxed">
               When I&apos;m not coding, you&apos;ll find me contributing to open-source, writing technical articles, or exploring new frameworks. I care deeply about performance, accessibility, and developer experience.
-            </p>
+            </p> */}
             <div className="grid grid-cols-2 gap-4 mt-2">
               {[
                 // { value: "5+", label: "Projects" },
