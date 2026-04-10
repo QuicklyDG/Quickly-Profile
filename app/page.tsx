@@ -24,7 +24,7 @@ const projects = [
   {
     title: "EmpireOne HRIS (Human Resource Information System)",
     description:
-      "Real-time collaborative workspace with live cursors, shared whiteboards, and video conferencing built on WebSockets and WebRTC.",
+      "simplifies employee management by centralizing records and HR processes in one efficient platform.",
     tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-violet-600 to-indigo-600",
     link: "https://empireone-hris.com/",
@@ -33,7 +33,7 @@ const projects = [
   {
     title: "EmpireOne Ticketing System",
     description:
-      "AI-powered e-commerce platform with personalised recommendations, dynamic pricing engine, and sub-100 ms checkout.",
+      "streamlines issue tracking and support requests, enabling efficient task management, quick resolutions, and improved team collaboration.",
     tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-pink-600 to-rose-600",
     link: "https://eo-unified-ims.com/",
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "EmpireOne Unified System",
     description:
-      "Full-stack analytics dashboard ingesting millions of events per day with live charts, custom funnels, and export pipelines.",
+      "is an all-in-one platform that centralizes operations, streamlines workflows, and integrates multiple business systems into a single, efficient solution.",
     tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-orange-500 to-amber-500",
     link: "https://empireone-bpo.com/",
@@ -51,7 +51,7 @@ const projects = [
   {
     title: "Curtis CRMS (Customer Relationship Management System)",
     description:
-      "CLI + web UI for spinning up reproducible dev environments via Docker Compose profiles, with one-command setup.",
+      "is a comprehensive system for managing customer interactions, tracking sales, and improving customer satisfaction—helping businesses streamline their operations.",
     tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-teal-500 to-cyan-600",
     link: "https://curtis-css.com/",
@@ -60,7 +60,7 @@ const projects = [
   {
     title: "Egies Beauty Botique POS (Point of Sale)",
     description:
-      "CLI + web UI for spinning up reproducible dev environments via Docker Compose profiles, with one-command setup.",
+      "is a user-friendly system for fast sales transactions, inventory tracking, and customer management—helping streamline daily store operations.",
     tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-pink-600 to-rose-600",
     link: "https://egies-pos.site/",
