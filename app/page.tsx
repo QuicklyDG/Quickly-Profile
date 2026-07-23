@@ -45,17 +45,8 @@ const projects = [
       "is an all-in-one platform that centralizes operations, streamlines workflows, and integrates multiple business systems into a single, efficient solution.",
     tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-orange-500 to-amber-500",
-    link: "https://empireone-bpo.com/",
-    demo: "https://empireone-bpo.com/",
-  },
-  {
-    title: "Curtis CRMS (Customer Relationship Management System)",
-    description:
-      "is a comprehensive system for managing customer interactions, tracking sales, and improving customer satisfaction—helping businesses streamline their operations.",
-    tags: ["React.js", "Laravel", "MySQL"],
-    gradient: "from-teal-500 to-cyan-600",
-    link: "https://curtis-css.com/",
-    demo: "https://curtis-css.com/",
+    link: "https://careers.empireonecx.com/",
+    demo: "https://careers.empireonecx.com/",
   },
   {
     title: "Egies Beauty Botique POS (Point of Sale)",
@@ -63,8 +54,26 @@ const projects = [
       "is a user-friendly system for fast sales transactions, inventory tracking, and customer management—helping streamline daily store operations.",
     tags: ["React.js", "Laravel", "MySQL"],
     gradient: "from-pink-600 to-rose-600",
-    link: "https://egies-pos.site/",
-    demo: "https://egies-pos.site/",
+    link: "https://egies-pos.store/",
+    demo: "https://egies-pos.store/",
+  },
+  {
+    title: "Curtis CRMS (Customer Relationship Management System) V1",
+    description:
+      "is a comprehensive system for managing customer interactions, tracking sales, and improving customer satisfaction—helping businesses streamline their operations.",
+    tags: ["React.js", "Laravel", "MySQL"],
+    gradient: "from-teal-500 to-cyan-600",
+    link: "https://curtis-css.com/",
+    demo: "https://curtis-css.com/",
+  },
+    {
+    title: "Curtis CRMS (Customer Relationship Management System) V2",
+    description:
+      "is a comprehensive system for managing customer interactions, tracking sales, and improving customer satisfaction—helping businesses streamline their operations.",
+    tags: ["React.js", "Laravel", "MySQL"],
+    gradient: "from-teal-500 to-cyan-600",
+    link: "https://curtis-international.com/",
+    demo: "https://curtis-international.com/",
   },
 ];
 
